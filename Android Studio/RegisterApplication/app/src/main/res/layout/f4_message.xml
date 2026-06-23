@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1_pink_blue"
+    android:orientation="vertical"
+    android:id="@+id/Theme_Fragmentf4_Message">
+
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar4_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"/>
+    <!-- 兴趣选项网格 -->
+
+    <GridView
+        android:id="@+id/Message_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:numColumns="3"
+        android:padding="5dp" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:id="@+id/note_list"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  图片/视频封面  -->
+        <!--  标题  -->
+        <ImageView
+            android:id="@+id/NoteItem_nImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/NoteItem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+        <!--  内容  -->
+
+        <TextView
+            android:id="@+id/NoteItem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_marginTop="8dp">
+
+
+<!--            圆形头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/NoteItem_PImage"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="6dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_portrait" />
+
+
+<!--            用户姓名-->
+
+            <TextView
+                android:id="@+id/NoteItem_name"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:textSize="13sp" />
+
+            <!--喜欢-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/NoteItem_like_button"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_like1" />
+                <TextView
+                    android:id="@+id/NoteItem_like_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="点赞"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp"
+                    android:layout_marginEnd="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

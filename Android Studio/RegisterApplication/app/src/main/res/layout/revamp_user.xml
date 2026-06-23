@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Theme_RevampUser"
+    android:background="@drawable/background1_pink_blue"
+    android:padding="5dp">
+
+    <!--头部标签-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar_RevampUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--用户信息容器-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- 使用 RelativeLayout 作为头像和按钮的容器 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 头像 -->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/RevampUser_PImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 图标按钮 -->
+            <Button
+                android:id="@+id/UserRevamp_Image_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@id/RevampUser_PImage"
+                android:layout_alignRight="@id/RevampUser_PImage"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_all4" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_shape"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="1dp">
+            <!-- 名字 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="名字"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/RevampUser_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:layout_marginStart="3dp"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+            <!-- 小红书号 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="小红书号"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+
+                <EditText
+                    android:id="@+id/RevampUser_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+
+            <!-- 简介 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="简介"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+                <EditText
+                    android:id="@+id/RevampUser_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:layout_marginStart="3dp"
+                    android:textSize="16sp"
+                    android:maxLength="29"
+                    android:background="@android:color/transparent" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+
+            <!-- 背景图 -->
+            <LinearLayout
+                android:id="@+id/RevampUser_drawer_BImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="背景图"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/RevampUser_BImage"
+                    android:layout_width="19dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+
+
+            <!-- 地区 -->
+            <LinearLayout
+                android:id="@+id/RevampUser_drawer_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="兴趣"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+                <TextView
+                    android:id="@+id/RevampUser_interests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+            <!-- 性别 -->
+            <LinearLayout
+                android:id="@+id/RevampUser_drawer_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+                <TextView
+                    android:id="@+id/RevampUser_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+            <!-- 生日 -->
+            <LinearLayout
+                android:id="@+id/RevampUser_drawer_BTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+                <TextView
+                    android:id="@+id/RevampUser_BTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black" />
+
+
+            <!-- 地区 -->
+            <LinearLayout
+                android:id="@+id/RevampUser_drawer_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="地区"
+                    android:textSize="16sp"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:id="@+id/RevampUser_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_all2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/RevampUser_bottom"
+            style="@style/CustomButtonStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:text="保存" />
+
+    </LinearLayout>
+</LinearLayout>

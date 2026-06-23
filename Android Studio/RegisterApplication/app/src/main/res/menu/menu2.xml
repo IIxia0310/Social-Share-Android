@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    底部菜单栏选项-->
+
+    <item
+        android:id="@+id/bnavigation_home"
+        android:icon="@drawable/toolbar_3"
+        android:textColor="@color/colorBlack"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:title="" />
+
+
+
+
+</menu>

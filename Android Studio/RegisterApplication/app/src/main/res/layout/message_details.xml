@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1_pink_blue"
+    android:id="@+id/Theme_MessageDetails"
+    android:orientation="vertical">
+
+    <!-- 头部-->
+    <LinearLayout
+        android:id="@+id/Toolbar_MessageDetails"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!-- 返回按钮-->
+        <ImageView
+            android:id="@+id/MessageDetails_ToolbarButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toolbar_2"
+            android:layout_weight="0" />
+        <!-- 用户头像-->
+        <!-- 圆形头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/MessageDetails_ToolbarPImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/image_portrait"
+            android:layout_weight="0" />
+
+        <!-- 用户姓名-->
+        <TextView
+            android:id="@+id/MessageDetails_ToolbarName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="8dp"
+            android:text="name"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <!--  关注按钮-->
+        <Button
+            android:id="@+id/MessageDetails_ToolbarButton2"
+            style="@style/CustomButtonStyle2"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/ic_all3"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:text="已关" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLittleBlueN" />
+
+
+
+    <!-- 聊天消息显示区域，使用 RecyclerView 展示消息列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MessageDetails_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLittleBlueN" />
+
+    <!-- 输入框和发送按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/MessageDetails_editText_chat_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:hint="输入聊天内容" />
+
+        <Button
+            android:id="@+id/MessageDetails_button_chat_send"
+            style="@style/CustomButtonStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="17dp"
+            android:text="发送" />
+    </LinearLayout>
+</LinearLayout>

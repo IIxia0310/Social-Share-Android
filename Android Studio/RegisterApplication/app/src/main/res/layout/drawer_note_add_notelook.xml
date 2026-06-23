@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="@color/colorLightGrey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/AddLook_drawer1_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/AddLook_left1_open"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add_visible_botton1"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/AddLook_middle1_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公开可见"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/AddLook_right1_open"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_all2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AddLook_drawer2_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/AddLook_left2_privacy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add_visible_botton2"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/AddLook_middle2_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="私密不可见"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/AddLook_right2_privacy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_all2" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/AddLook_drawer3_intercorrelation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="12dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/AddLook_left3_intercorrelation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_weight="0"-->
+<!--            android:src="@drawable/add_visible_botton3" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/AddLook_middle3_intercorrelation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="仅互关好友可见"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/AddLook_right3_intercorrelation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_weight="0"-->
+<!--            android:src="@drawable/ic_all2" />-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

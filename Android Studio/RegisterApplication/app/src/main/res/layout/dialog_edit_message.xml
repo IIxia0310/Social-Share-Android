@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前用户:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/Dialog_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="xxx:"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <!-- 聊天消息显示区域，使用 RecyclerView 展示消息列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MessageDetails_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复留言"
+        android:textColor="#165DFF"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/Dialog_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+</LinearLayout>

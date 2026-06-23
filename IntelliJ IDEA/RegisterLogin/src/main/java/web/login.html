@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员登录</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        neutral: '#F2F3F5',
+                        'neutral-dark': '#4E5969',
+                        danger: '#F53F3F'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .form-input-focus {
+                @apply focus:ring-2 focus:ring-primary/30 focus:border-primary;
+            }
+            .btn-hover {
+                @apply hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300;
+            }
+            .card-effect {
+                @apply shadow-md hover:shadow-lg transition-shadow duration-300;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-neutral to-white min-h-screen font-inter">
+<div class="container mx-auto px-4 py-12 flex justify-center items-center min-h-screen">
+    <div class="w-full max-w-md">
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden card-effect">
+            <div class="p-8">
+                <div class="text-center mb-8">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                        <i class="fa fa-shield text-primary text-2xl"></i>
+                    </div>
+                    <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-gray-800">管理员登录</h2>
+                    <p class="text-gray-500 mt-2">请输入您的账号和密码</p>
+                </div>
+
+                <form id="loginForm" class="space-y-4">
+                    <div class="space-y-2">
+                        <label for="username" class="block text-sm font-medium text-gray-700">用户名</label>
+                        <div class="relative">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            <input type="text" id="username" name="username" placeholder="请输入用户名"
+                                   class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none form-input-focus transition-all"
+                                   required>
+                        </div>
+                        <p id="usernameError" class="text-danger text-sm hidden">请输入用户名</p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="password" class="block text-sm font-medium text-gray-700">密码</label>
+                        <div class="relative">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            <input type="password" id="password" name="password" placeholder="请输入密码"
+                                   class="w-full pl-10 pr-10 py-3 rounded-lg border border-gray-300 focus:outline-none form-input-focus transition-all"
+                                   required>
+                            <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500">
+                                <i class="fa fa-eye-slash"></i>
+                            </button>
+                        </div>
+                        <p id="passwordError" class="text-danger text-sm hidden">请输入密码</p>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input id="remember" name="remember" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary">
+                            <label for="remember" class="ml-2 block text-sm text-gray-700">记住我</label>
+                        </div>
+                        <a href="#" class="text-sm font-medium text-primary hover:text-primary/80 transition-colors">忘记密码?</a>
+                    </div>
+
+                    <button type="submit" id="loginButton"
+                            class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 btn-hover flex items-center justify-center">
+                        <i class="fa fa-sign-in mr-2"></i>
+                        登录
+                    </button>
+                </form>
+
+                <div class="mt-6 text-center">
+                    <p class="text-gray-500 text-sm">
+                        不是管理员? <a href="#" class="text-primary hover:underline">返回首页</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 px-8 py-4 text-center text-sm text-gray-500">
+                <p>© 2025 管理员控制台 版权所有</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loginForm = document.getElementById('loginForm');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const usernameError = document.getElementById('usernameError');
+        const passwordError = document.getElementById('passwordError');
+        const togglePassword = document.getElementById('togglePassword');
+        const loginButton = document.getElementById('loginButton');
+
+        // 切换密码可见性
+        togglePassword.addEventListener('click', function() {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.querySelector('i').classList.toggle('fa-eye');
+            this.querySelector('i').classList.toggle('fa-eye-slash');
+        });
+
+        // 表单验证
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+
+            // 重置错误提示
+            usernameError.classList.add('hidden');
+            passwordError.classList.add('hidden');
+
+            // 验证用户名
+            if (!usernameInput.value.trim()) {
+                usernameError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // 验证密码
+            if (!passwordInput.value.trim()) {
+                passwordError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // 如果验证通过，发送登录请求
+            if (isValid) {
+                // 禁用登录按钮，显示加载状态
+                loginButton.disabled = true;
+                loginButton.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i> 登录中...';
+
+                // 发送登录请求
+                fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        userId: usernameInput.value,
+                        password: passwordInput.value
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // 登录成功，跳转到管理页面
+                            window.location.href = 'index.html';
+                        } else {
+                            // 登录失败，显示错误提示
+                            showNotification(data.message, 'error');
+
+                            // 重置登录按钮
+                            loginButton.disabled = false;
+                            loginButton.innerHTML = '<i class="fa fa-sign-in mr-2"></i> 登录';
+                        }
+                    })
+                    .catch(error => {
+                        // 处理网络错误
+                        showNotification('网络错误，请稍后重试', 'error');
+
+                        // 重置登录按钮
+                        loginButton.disabled = false;
+                        loginButton.innerHTML = '<i class="fa fa-sign-in mr-2"></i> 登录';
+                    });
+            }
+        });
+
+        // 显示通知
+        function showNotification(message, type = 'success') {
+            // 创建通知元素
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg transform transition-all duration-500 ease-in-out flex items-center z-50 ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-danger text-white'
+            }`;
+
+            notification.innerHTML = `
+                    <i class="fa ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'} mr-2"></i>
+                    <span>${message}</span>
+                `;
+
+            // 添加到页面
+            document.body.appendChild(notification);
+
+            // 动画效果
+            setTimeout(() => {
+                notification.classList.add('opacity-0');
+                notification.style.transform = 'translateX(100%)';
+            }, 3000);
+
+            // 移除元素
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 3500);
+        }
+    });
+</script>
+<!--<script src="/js/login.js"></script>-->
+</body>
+</html>

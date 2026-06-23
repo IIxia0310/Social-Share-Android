@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <!-- 用户头像 -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/NoteCommen_PImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="3dp"
+            android:src="@drawable/image_portrait" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!-- 姓名 -->
+                    <TextView
+                        android:id="@+id/NoteCommen_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#222222"
+                        android:text="姓名" />
+                    <TextView
+                        android:id="@+id/NoteCommen_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#C53434"
+                        android:layout_marginStart="9dp"
+                        android:text="xx" />
+
+                    <Button
+                        android:id="@+id/NoteCommen_comentDelectButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="9dp"
+                        android:visibility="gone"
+                        android:text="删除评论"
+                        android:textSize="10sp"
+                        android:singleLine="true">
+
+
+                    </Button>
+
+                </LinearLayout>
+
+
+                <!-- 评论内容 -->
+                <TextView
+                    android:id="@+id/NoteCommen_coment"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"
+                    android:text="评论内容" />
+
+                <!-- 评论时间 -->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 编辑 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="编辑于"
+                        android:textColor="@color/colorGray"
+                        android:textSize="10sp" />
+                    <!-- 时间 -->
+                    <TextView
+                        android:id="@+id/NoteCommen_updateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="2025-04-22 14:01:05"
+                        android:textColor="@color/colorGray"
+                        android:textSize="9sp" />
+                    <!-- 地区 -->
+                    <TextView
+                        android:id="@+id/NoteCommen_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="地区"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/colorGray"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--喜欢-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="1dp">
+            <ImageView
+                android:id="@+id/NoteCommen_likeButton"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_like1" />
+            <TextView
+                android:id="@+id/NoteCommen_likeSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginEnd="8dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

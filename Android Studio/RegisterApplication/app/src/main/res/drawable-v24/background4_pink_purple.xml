@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#F7B3F7"
+        android:endColor="#FAAFBA"
+        android:angle="90"
+        android:type="linear"
+        android:useLevel="false"
+        android:gradientRadius="100" /> <!-- 可根据实际效果调整此值 -->
+</shape>

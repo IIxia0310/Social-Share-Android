@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background1_pink_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Theme_Side7CommunityConvention"
+    tools:context=".View.Side7CommunityConvention">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar_Side7CommunityConvention"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="必看！分享生活APP社区公约来啦📖"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="宝子们👫，咱分享生活APP能成为超棒的生活分享大舞台，靠的是每一个人的努力～为了让这片小天地一直美好下去，大家可得遵守社区公约哦，一起打造超赞的社区环境！下面就来看看具体都有啥要求👇"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一、遵守法律法规与平台规则"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝子们，和国家相关的任何事儿，可绝对不能抹黑！这是红线，绝对不能碰🚫 法律法规是咱行事的基本准则，平台的各项规则也是为了维护社区秩序，咱都得严格遵守～"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二、内容发布规范"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拒绝虚假信息：别当网络水军，别大量发虚假信息、评论、点赞，更别买粉，这些行为就像老鼠屎，坏了社区的一锅粥。要是被发现，那可逃不过平台的火眼金睛和严格管控。"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁止导流：咱就在分享生活APP好好玩，别展示其他平台账号、手机号、二维码、站外网址链接、小程序码这些导流信息哈。咱分享生活APP这么宝藏，不需要用这种方式 “拉客”~"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去掉站外水印：发视频、图片的时候，要是有其他软件或平台的水印，就像漂亮衣服上沾了污渍，多影响美观。所以一定要处理掉，让咱的分享清清爽爽～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合规发布新闻：要是想在平台发布或转载时政类新闻，先去做好资质认证，还要清楚表明资讯来源，这样才能保证信息的靠谱性～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="远离血腥画面：未打码的灾害、打斗、伤亡现场，还有游戏里的血腥暴力内容，咱都别发。社区是大家放松、开心的地方，这些画面太 “重口味” 啦～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杜绝诱导互动"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="别用利益交换，比如 “点赞就送小礼品” 这种方式诱导大家点赞、评论、关注。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布笔记的时候，别用惊喜、悬念、欺骗这些套路诱导互动，真诚才是必杀技！"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="像玄学好运、祝福祈愿、正能量、玄学好运预测这类祝福内容，也别用来引导互动。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不要发那些没有讨论价值，或者纯粹为了诱导跟风的无意义话题。"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊重原创，拒绝搬运"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="别直接搬运别人的作品，或者简单剪裁片段就发布，这和偷别人东西没啥两样。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对别人的作品简单处理，比如加个模版音乐、滤镜、边框、特效，或者放大、剪裁、镜像翻转，自己没啥创作内容，这可不行。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有版权方授权，就别传播影视剧、综艺、动漫、音乐MV、游戏体育赛事这些版权内容。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宣传自己产品或服务的时候，不能用别人已经发布过的内容，像产品图片、房源拍摄图、效果图等。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用公开素材，比如医师演讲、名人采访、他人直播片段等来推广自家产品或服务，也是不允许的哦。"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三、互动行为准则"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊重原创与真实分享：分享的时候，要用自己的经验或创造的素材，并且保证内容真实。要是转载，得先获得对方同意，还要注明出处。要是分享过程中有商家赞助或提供便利，得和大家说明利益相关，让大家明明白白～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杜绝炫富：要是咱财富比较多，在分享消费过程中，得有同理心，顾及别人感受，别浪费，尊重劳动者和服务者。炫富行为既不符合大家对有用内容的需求，还破坏社区友好氛围，咱可别这么做～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享科学内容：在健康建议、商业宣传这些领域，伪科学可不少。所以分享相关心得的时候，一定要保证内容科学，别误导大家～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="适度修饰内容：在美妆、穿搭、探店这些给别人提建议的领域，咱可以适度美化笔记，但别过度，要保证不误导别人，毕竟大家可能会参考咱的分享做决策呢～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="勿发布不当内容：社区禁止发布裸露或性暗示内容。要是分享是为了教育、医疗目的，或者性别平等等公共利益，也要遵守伦理规范，别引起不良联想～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不冒充他人：分享生活APP是UGC社区，很多普通用户在这里分享生活。社区允许重名，但冒充他人这种行为可不行哦～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合理使用影响力：要是在社区有一定粉丝量，有了公众影响力，可别滥用。要是觉得受到不公正对待，先找社区投诉渠道帮忙，或者走法律途径，别轻易利用影响力去指控或发布煽动性话语～"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="谨慎分享医疗与投资建议：医疗和投资关乎大家的人身健康和财产安全，没有相关资质，就别给别人提这类建议。要是分享健康和泛投资话题，得在显眼位置标明 “不涉及医疗/投资建议”~"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊重他人权益"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享涉及他人时，要经过对方同意，尊重他人隐私、肖像、名誉等权利。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涉及逝者，要顾及当事人和家属的尊严与隐私。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涉及未成年人，要特别关注和保护他们的隐私与个人信息，家长们别分享儿童裸露照片和视频哦。"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涉及弱势群体，要充分理解对方处境，维护其尊严。"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好啦，宝子们，记住这些社区公约，让我们一起在分享生活APP快乐玩耍，分享美好生活，打造超赞的社区吧💕"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

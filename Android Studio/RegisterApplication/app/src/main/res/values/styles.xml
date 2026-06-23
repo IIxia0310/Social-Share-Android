@@ -1,0 +1,127 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationIcon">@null</item> <!-- 避免默认设置覆盖 -->
+
+        <!-- 其他主题相关设置 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colo1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 其他主题相关设置 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- 其他主题属性 -->
+        <item name="colorOnPrimary">@color/colorLightWhite</item> <!-- 选中时文字颜色 -->
+        <item name="colorOnSurface">@color/colorGray</item> <!-- 未选中时文字颜色 -->
+    </style>
+
+    <!-- 继承自AppCompat的按钮样式，以便更好地兼容不同版本的Android系统 -->
+    <style name="CustomButtonStyle1" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background1</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- 继承自AppCompat的按钮样式，以便更好地兼容不同版本的Android系统 -->
+    <style name="CustomButtonStyle2" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background2</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- 继承自AppCompat的按钮样式，以便更好地兼容不同版本的Android系统 -->
+    <style name="CustomButtonStyle3" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background3</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="CustomButtonStyle4" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background4</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="CustomButtonStyle5" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background5</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- 继承自AppCompat的按钮样式，以便更好地兼容不同版本的Android系统 -->
+    <style name="CustomButtonStyle6" parent="Widget.AppCompat.Button">
+        <!-- 设置按钮背景为灰色圆角形状，可通过shape实现 -->
+        <item name="android:background">@drawable/button_background6</item>
+        <!-- 设置按钮文字颜色为白色 -->
+        <item name="android:textColor">@color/colorGrey</item>
+        <!-- 可根据需要调整按钮内边距 -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- 其他样式定义 -->
+    <style name="ToolbarTitleBoldStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+<!--    小圆点样式-->
+    <style name="CustomTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">@color/colo1</item>
+        <item name="tabTextColor">@color/colo3</item>
+        <item name="tabIndicatorColor">@color/colo4</item>
+    </style>
+
+    <style name="Theme.FileUploadClient" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colo1</item>
+        <item name="colorPrimaryVariant">@color/colo2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colo3</item>
+        <item name="colorSecondaryVariant">@color/colo4</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+    <string name="app_name">文件上传客户端</string>
+
+</resources>

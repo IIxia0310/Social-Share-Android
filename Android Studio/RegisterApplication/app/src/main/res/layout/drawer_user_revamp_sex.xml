@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="@color/colorLightGrey"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/UserRevamp_drawer1_sex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/UserRevamp_middle_sex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="center" /> <!-- 添加了 android:gravity="center" -->
+
+        <ImageView
+            android:id="@+id/UserRevamp_right1_sex1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_all2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/UserRevamp_drawer1_sex2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/UserRevamp_middle_sex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="center" /> <!-- 添加了 android:gravity="center" -->
+
+        <ImageView
+            android:id="@+id/UserRevamp_right1_sex2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_all2" />
+    </LinearLayout>
+
+</LinearLayout>

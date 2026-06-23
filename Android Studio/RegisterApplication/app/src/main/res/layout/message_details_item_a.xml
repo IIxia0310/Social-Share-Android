@@ -1,0 +1,47 @@
+<!-- item_chat.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_details_item_Image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/image_portrait" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/message_details_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:background="@drawable/message_border_a"
+            android:text="内容"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/message_details_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-01-19 09:45:50"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/colorLightGrey" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="6dp"
+    android:elevation="2dp">
+
+    <!-- 用户头像 -->
+    <ImageView
+        android:id="@+id/user_pImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:padding="2dp" />
+
+    <!-- 主要信息 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 用户名、性别和ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginLeft="8dp"
+                android:padding="2dp"
+                android:background="#E0E0E0"/>
+
+
+
+        </LinearLayout>
+
+        <!-- 密码信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号:"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="••••••••"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="4dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/user_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="••••••••"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+
+        <!-- 生日信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日:"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/user_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1990-01-01"
+                android:layout_marginEnd="20dp"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册时间:"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/user_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1990-01-01"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- 状态和操作 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|end">
+
+        <!-- 状态和操作 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 状态标签 -->
+            <TextView
+                android:id="@+id/user_revamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改"
+                android:textSize="10sp"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="9dp"/>
+            <!-- 状态标签 -->
+            <TextView
+                android:id="@+id/user_delect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textSize="10sp"
+                android:background="#F44336"
+                android:textColor="#FFFFFF"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="end" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

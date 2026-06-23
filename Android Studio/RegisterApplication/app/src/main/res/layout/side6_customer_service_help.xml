@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Theme_Side6CustomerServiceHelp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1_pink_blue"
+    android:orientation="vertical"
+    tools:context=".View.Side6CustomerServiceHelp">
+
+    <!-- 顶部工具栏 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar_Side6CustomerServiceHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+    <!-- 客服联系方式提示 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="有疑问或是建议，可给客服留言"
+        android:textSize="16sp" />
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:text="给客服留言"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- 留言输入框 -->
+    <EditText
+        android:id="@+id/Side6CustomerServiceHelp_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="#80FFFFFF"
+        android:hint="请输入您的留言内容"
+        android:lines="6"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp" />
+
+    <!-- 发送按钮 -->
+    <Button
+        android:id="@+id/Side6CustomerServiceHelp_button"
+        style="@style/CustomButtonStyle1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="发送留言"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

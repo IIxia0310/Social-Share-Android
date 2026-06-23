@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <!--    抽屉选项-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/SideMenu1_myInterests"
+            android:icon="@drawable/left_button1"
+            android:title="我的兴趣"/>
+        <item
+            android:id="@+id/SideMenu2_myComment"
+            android:icon="@drawable/left_button2"
+            android:title="我的评论"/>
+        <item
+            android:id="@+id/SideMenu3_browsingHistory"
+            android:icon="@drawable/left_button3"
+            android:title="浏览记录"/>
+    </group>
+
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/SideMenu4_revampPassword"
+                android:icon="@drawable/left_button4"
+                android:title="修改密码"/>
+            <item
+                android:id="@+id/SideMenu5_Switch_Topic"
+                android:icon="@drawable/left_button5"
+                android:title="切换主题" />
+
+            <item
+                android:id="@+id/SideMenu6_CustomerServiceHelp"
+                android:icon="@drawable/left_button6"
+                android:title="客服帮助"/>
+            <item
+                android:id="@+id/SideMenu7_CommunityConvention"
+                android:icon="@drawable/left_button7"
+                android:title="社区公约" />
+
+        </menu>
+    </item>
+
+</menu>

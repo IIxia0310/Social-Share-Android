@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Theme_Side5SwitchTopic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1_pink_blue">
+
+    <!-- 顶部 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar_Side5SwitchTopic"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <!-- 主题选择 RadioGroup -->
+        <RadioGroup
+            android:id="@+id/rg_theme_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+
+            <RadioButton
+                android:id="@+id/rb_theme1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="16dp"
+                android:layout_marginTop="40dp"
+                android:text="粉蓝主题"
+                android:textSize="16sp"/>
+
+
+
+            <RadioButton
+                android:id="@+id/rb_theme2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="16dp"
+                android:text="黄绿主题"
+                android:textSize="16sp"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_theme3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:drawablePadding="16dp"
+                android:text="粉黄主题"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_theme4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="16dp"
+                android:text="粉紫主题"
+                android:textSize="16sp"/>
+
+            <RadioButton
+            android:id="@+id/rb_theme5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginEnd="20dp"
+            android:buttonTint="@color/black"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="16dp"
+            android:text="紫绿主题"
+            android:textSize="16sp"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_theme6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@color/black"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="16dp"
+                android:text="绿蓝主题"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="180dp">
+
+            <!--粉蓝主题-->
+
+            <!--黄绿主题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/background1_pink_blue" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background2_yellow_blue"
+                        android:layout_gravity="end"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+            </LinearLayout>
+
+            <!--粉黄主题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background3_pink_yellow"
+                        android:layout_gravity="end"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+            </LinearLayout>
+
+            <!--粉紫主题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background4_pink_purple"
+                        android:layout_gravity="end"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+            </LinearLayout>
+
+            <!--绿蓝主题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background5_purple_green"
+                        android:layout_gravity="end"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+            </LinearLayout>
+            <!--绿蓝主题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey" />
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/background6_green_blue"
+                        android:layout_gravity="end"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrey"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="62dp"
+                    android:background="@color/colorGrey"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- 保存主题按钮 -->
+    <Button
+        android:id="@+id/Side5SwitchTopic_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/CustomButtonStyle3"
+        android:textColor="@color/black"
+        android:text="保存主题" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

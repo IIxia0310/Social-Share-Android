@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background1_pink_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Theme_NoteDetails"
+    tools:context=".View.NoteDetails">
+
+    <!-- 头部-->
+    <LinearLayout
+        android:id="@+id/Toolbar_NoteDetails"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!-- 返回按钮-->
+        <ImageView
+            android:id="@+id/NoteDetails_ToolbarButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toolbar_2"
+            android:layout_weight="0" />
+        <!-- 用户头像-->
+        <!-- 圆形头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/NoteDetails_ToolbarPImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/image_portrait"
+            android:layout_weight="0" />
+
+        <!-- 用户姓名-->
+        <TextView
+            android:id="@+id/NoteDetails_ToolbarName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="8dp"
+            android:text="name"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <!--  关注按钮-->
+        <Button
+            android:id="@+id/NoteDetails_ToolbarButton2"
+            style="@style/CustomButtonStyle6"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            android:text="自己" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLittleBlueN" />
+
+    <!-- 纵向滑动框-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--  笔记图片适配器  -->
+            <!--  图片数量提醒，小圆点-->
+
+            <!-- 修改了这里，添加了 android:layout_gravity="center_horizontal" -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/NoteDetails_ViewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dotsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" />
+
+            <!--  标题  -->
+            <TextView
+                android:id="@+id/NoteDetails_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:maxLines="2"
+                android:text="标题"
+                android:ellipsize="end" />
+            <!--  内容  -->
+            <TextView
+                android:id="@+id/NoteDetails_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="内容"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!--  编辑时间  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="9dp">
+                <!--  编辑  -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="编辑于"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10sp" />
+                <!--  时间  -->
+                <TextView
+                    android:id="@+id/NoteDetails_updateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="2025-04-22 14:01:05"
+                    android:textColor="@color/colorGray"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!--分层-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLittleBlueN" />
+
+            <!-- 共有几条评论-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="9dp">
+<!--                &lt;!&ndash;  共有  &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:text="共有"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="12sp" />-->
+
+                <!--  共有  -->
+                <TextView
+                    android:id="@+id/NoteDetails_comment_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+<!--                &lt;!&ndash;  共有评论  &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:text="条评论"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+            </LinearLayout>
+
+            <!--  评论列表  -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/NoteDetail_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/note_details_commen_list_item" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--分层-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/colorLittleBlueN" />
+
+    <!-- 底部按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:padding="1dp">
+        <!-- 输入-->
+        <!-- 输入-->
+        <Button
+            android:id="@+id/NoteDetails_BottonComment"
+            style="@style/CustomButtonStyle6"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="说点什么呢..." />
+
+        <!--喜欢-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="1dp">
+            <ImageView
+                android:id="@+id/NoteDetails_Bottom_like_button"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_like1" />
+            <TextView
+                android:id="@+id/NoteDetails_Bottom_like_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginEnd="8dp"
+                android:text="点赞"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <!--收藏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="1dp">
+            <ImageView
+                android:id="@+id/NoteDetails_Bottom_collect_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_collect1" />
+            <TextView
+                android:id="@+id/NoteItem_Bottom_collect_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginEnd="8dp"
+                android:text="收藏"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <!--评论-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/NoteDetails_Bottom_comment_button"
+                android:layout_width="23dp"
+                android:layout_height="27dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_comment1" />
+            <TextView
+                android:id="@+id/NoteItem_Bottom_comment_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="评论"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

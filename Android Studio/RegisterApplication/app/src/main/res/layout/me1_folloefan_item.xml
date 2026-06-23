@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+    <!-- 用户头像 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/me_folloefan_CircleImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/image_portrait" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <!-- 姓名 -->
+        <TextView
+            android:id="@+id/me_folloefan_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#222222"
+            android:text="姓名"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--  关注按钮-->
+    <Button
+        android:id="@+id/me_folloefan_button"
+        style="@style/CustomButtonStyle6"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/ic_all3"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:text="已关" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

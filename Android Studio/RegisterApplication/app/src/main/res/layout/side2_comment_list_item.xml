@@ -1,0 +1,60 @@
+<!-- item_chat.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Side2CommentListItem_Image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/image_portrait" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Side2CommentListItem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Side2CommentListItem_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/Side2CommentListItem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-01-19 09:45:50"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/colorLightGrey" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Side2CommentListItem_nImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+
+</LinearLayout>

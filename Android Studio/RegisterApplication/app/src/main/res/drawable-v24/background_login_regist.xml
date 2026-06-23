@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="640dp"
+    android:viewportWidth="360"
+    android:viewportHeight="640">
+
+    <!-- 左下到右上的对角线分割 -->
+    <path
+        android:pathData="M0,640 L360,0 L360,640 Z"
+        android:fillColor="#FFC0CB"/> <!-- 左下三角颜色 -->
+
+    <path
+        android:pathData="M0,0 L0,640 L360,0 Z"
+        android:fillColor="#C6F9E8  "/> <!-- 右上三角颜色 -->
+
+    <stroke
+        android:width="1dp"
+        android:color="#D3D3D3" /> <!-- 这里修改边框色 -->
+</vector>

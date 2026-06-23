@@ -1,0 +1,154 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1_pink_blue">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎~"
+            android:textColor="#333333"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:background="@drawable/background_login_regist"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LogIn"
+                    android:textSize="24sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="login here using your id and password"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="5dp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/login1"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0" />
+
+                    <EditText
+                        android:id="@+id/Login_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:layout_marginStart="3dp"
+                        android:textSize="15sp"
+                        android:maxLength="11"
+                        android:hint="UserId"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/login2"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0" />
+
+                    <EditText
+                        android:id="@+id/Login_passwprd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:hint="UserPassword"
+                        android:maxLength="16"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"> <!-- 关键1：设置总权重为2 -->
+
+                    <Button
+                        android:id="@+id/Login_botton1"
+                        style="@style/CustomButtonStyle1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:text="登录" />
+
+                    <Button
+                        android:id="@+id/Login_botton2"
+                        style="@style/CustomButtonStyle1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="注册"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/Login_botton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="管理员登录点击这里"
+                    android:textColor="#1937F8"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
